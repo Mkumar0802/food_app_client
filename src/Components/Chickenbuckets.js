@@ -12,7 +12,7 @@ const Chickenbuckets = ({ alignment = 'start' }) => {
     const getData = async () => {
         try {
             let { data: response } = await axios.get(
-                `http://localhost:5000/chickenbucket/getchickenbucket`
+                `https://food-api-kmk.herokuapp.com/chickenbucket/getchickenbucket`
             );
             setChickenbuckets(response);
         } catch (err) {

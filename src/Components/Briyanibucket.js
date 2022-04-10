@@ -12,7 +12,7 @@ const Briyanibuckets = ({ alignment = 'start' }) => {
     const getData = async () => {
         try {
             let { data: response } = await axios.get(
-                `http://localhost:5000/briyanibucket/getbriyanibucket`
+                `https://food-api-kmk.herokuapp.com/briyanibucket/getbriyanibucket`
             );
             setBriyanibuckets(response);
         } catch (err) {
@@ -61,7 +61,8 @@ const Briyanibuckets = ({ alignment = 'start' }) => {
                                     <div className="flex justify-center   gap-3 "><Link to="/cart">
                                         <button onClick={() => setData(val.id, val.name, val.photo, val.price, val.details)} className="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2" >
                                             Add to cart
-                                        </button></Link>
+
+                                        </button></Link><Outlet />
                                     </div>
                                 </div>
 
@@ -70,7 +71,6 @@ const Briyanibuckets = ({ alignment = 'start' }) => {
 
 
                         </div>
-
 
                     );
                 })}

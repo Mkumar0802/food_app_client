@@ -12,7 +12,7 @@ const Matchday = ({ alignment = 'start' }) => {
     const getData = async () => {
         try {
             let { data: response } = await axios.get(
-                `http://localhost:5000/matchday/getmatchday`
+                `https://food-api-kmk.herokuapp.com/matchday/getmatchday`
             );
             setMatchday(response);
         } catch (err) {
