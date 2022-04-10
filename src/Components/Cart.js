@@ -25,9 +25,9 @@ function Cart() {
 
     }, [])
 
-    const setData = (id, price) => {
+    const setData = (id, price,photo,name) => {
         localStorage.setItem('id', id)
-        // localStorage.setItem('name', name)
+        localStorage.setItem('name', name)
         localStorage.setItem('photo', photo)
         localStorage.setItem('price', price)
         // localStorage.setItem('total',total)
