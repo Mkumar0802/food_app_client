@@ -49,7 +49,7 @@ function Cart() {
 
                     <div class="mb-6 text-white">
                         <p className="text-base md:text-xl  ">{name}</p>
-                        <p className="text-base md:text-lg   ">₹{price} {photo}</p>
+                        <p className="text-base md:text-lg   ">₹{price}</p>
                         <p className="text-base md:text-lg   ">Total Price</p>
                         <p className="text-base md:text-lg   ">₹{price * count}</p>
                     </div>
