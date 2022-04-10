@@ -1,5 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
-import SocialLinks from "./SocialLinks";
+import { Link} from "react-router-dom";
+
 
 
 

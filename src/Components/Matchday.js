@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -45,7 +45,7 @@ const Matchday = ({ alignment = 'start' }) => {
                         <div className="p-1 mr-2  m-5    rounded-lg  max-w-sm  sm:rounded-lg  " key={val.index}>
                             <img
                                 className=" object-cover rounded-xl md:w-full  md:h-4/6  h-5/6 w-full   "
-                                alt="photo"
+                                alt="match"
                                 src={val.photo}
                             ></img>
                             <div className="p-2">

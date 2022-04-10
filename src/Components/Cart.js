@@ -12,7 +12,7 @@ function Cart() {
     const [photo, setPhoto] = useState('');
     const [price, setPrice] = useState('');
     const [id, setID] = useState(null);
-    const[total,setTotal] =useState('');
+    // const[total,setTotal] =useState('');
 
 
     useEffect(() => {
@@ -30,7 +30,7 @@ function Cart() {
         // localStorage.setItem('name', name)
         // localStorage.setItem('photo', photo)
         localStorage.setItem('price', price)
-        localStorage.setItem('total',total)
+        // localStorage.setItem('total',total)
         // localStorage.setItem('details', details)
 
     }
@@ -44,7 +44,7 @@ function Cart() {
                    
                     <img
                         className=" object-cover rounded-xl md:w-full  md:h-4/6  h-5/6 w-full   "
-                        alt="image"
+                        alt="cart"
                         src={photo}
                     ></img>
 

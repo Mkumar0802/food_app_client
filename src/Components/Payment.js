@@ -1,19 +1,19 @@
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import { Link, Outlet } from "react-router-dom";
 
 
 export function Payment() {
-    const [count, setCount] = useState(0);
-    const [price, setPrice] = useState('');
-    const [id, setID] = useState(null);
+    // const [count, setCount] = useState(0);
+    // const [price, setPrice] = useState('');
+    // const [id, setID] = useState(null);
 
 
-    useEffect(() => {
-		setID(localStorage.getItem('id'))
-		setPrice(localStorage.getItem('price'));
+    // useEffect(() => {
+	// 	setID(localStorage.getItem('id'))
+	// 	setPrice(localStorage.getItem('price'));
 		
 		
-	}, [])
+	// }, [])
 
     return (
         <div className="text-white bg-slate-500">

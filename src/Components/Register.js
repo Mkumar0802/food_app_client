@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
-import ValidationError from './ValidationError'
+import { Link, useNavigate } from 'react-router-dom'
+// import ValidationError from './ValidationError'
 import axios from 'axios'
 import React from 'react';
 
@@ -97,4 +97,5 @@ function Register() {
         </div>
     )
 }
-export default Register
+
+export default Register;

@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 
@@ -45,7 +45,7 @@ const Briyanibuckets = ({ alignment = 'start' }) => {
                         <div className="p-1 mr-2  m-5   rounded-lg  max-w-sm  sm:rounded-lg  " key={val.index}>
                             <img
                                 className=" object-cover rounded-xl md:w-full  md:h-4/6  h-5/6 w-full   "
-                                alt="image"
+                                alt="Briyani"
                                 src={val.photo}
                             ></img>
                             <div className="p-2">
@@ -62,7 +62,7 @@ const Briyanibuckets = ({ alignment = 'start' }) => {
                                         <button onClick={() => setData(val.id, val.name, val.photo, val.price, val.details)} className="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2" >
                                             Add to cart
 
-                                        </button></Link><Outlet />
+                                        </button></Link>
                                     </div>
                                 </div>
 

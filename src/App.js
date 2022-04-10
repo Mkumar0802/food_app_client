@@ -7,8 +7,8 @@ import Login from "./Components/Login";
 // import PageNotFound from './components/PageNotFound'
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
-import Downbar from "./Components/Downbar";
-import Register from "./Components/Register";
+// import Downbar from "./Components/Downbar";
+// import Register from "./Components/Register";
 import Footer from "./Components/Footer";
 import SocialLinks from "./Components/SocialLinks";
 import Matchday from "./Components/Matchday";
@@ -28,7 +28,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="home" element={<Home />} />
-          <Route path="register" element={<Register />} />
+          {/* <Route path="register" element={<Register />} /> */}
           <Route path="matchday" element={<Matchday />} />
           <Route path="cart" element={<Cart />} />
           <Route path="chickenbuckets" element={<Chickenbuckets />} />
