@@ -21,7 +21,7 @@ const Navbar = () => {
           <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
         </div>
 
-        <ul className={` text-white md:flex gap-3 md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-3/4 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? '  left-20 ' : 'top-[-490px]  '}`}>
+        <ul className={` text-white md:flex gap-3 md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-3/4 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? '  top-20 ' : 'top-[-490px]  '}`}>
 
 
           <li className=" rounded-lg px-4 py-2  ">
@@ -53,7 +53,7 @@ const Navbar = () => {
 
         <Outlet />
       </div>
-
+      <Downbar />
     </div>
 
   )
