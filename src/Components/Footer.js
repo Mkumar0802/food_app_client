@@ -5,7 +5,7 @@ import { Link} from "react-router-dom";
 
 function Footer() {
     return (
-        <div className=" bg-slate-900 text-white  pl-14  text-xs md:text-sm py-10  ">
+        <div className=" bg-slate-900 text-white   text-xs md:text-sm py-10  ">
             <div className="flex grid-cols-6  space-x-10 md:space-x-36 justify-center  ">
 
                 <div>
@@ -116,9 +116,38 @@ function Footer() {
             <div className="py-12 ">
 
             </div>
+            <div className="relative ">
+               
+                <div className="w-auto  text-white      py-20 text-center ">
+                    <h1 className="text-white text-xl font-mono " >
 
+                       CFC
+                    </h1>
+                  
+
+                    <div className="my-5 md:text-xl ">
+                        <p>
+                            Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing.
+                        </p>
+                        <p> Copyright @{(new Date().getFullYear())} </p>
+
+                    </div>
+
+                    <p>
+                Made by Muthukumar
+            </p>
+            <p>
+                Using React,Tailwind CSS
+            </p>
+
+                </div>
+               
+                
+               
+            </div>
 
         </div>
+        
 
 
     )

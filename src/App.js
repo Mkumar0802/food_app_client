@@ -35,8 +35,9 @@ function App() {
           <Route path="briyanibuckets" element={<Briyanibuckets />} />
           <Route path="paymentconfirmation" element={<Payment />} />
         </Routes>
-        <Footer />
         <SocialLinks />
+        <Footer />
+        
 
       </BrowserRouter>
     </div>

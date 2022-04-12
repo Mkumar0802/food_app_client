@@ -21,7 +21,7 @@ function Main() {
                         ></img>
 
                     </div>
-                    <div className="px-24 ">
+                    <div className=" ">
                         <button className="sm:text-xs  sm:px-1 sm:py-1 md:text-xl   justify-center underline underline-offset-1">
                             <Link to="/matchday"> Match day Specials </Link>
                         </button>
@@ -37,9 +37,9 @@ function Main() {
                         ></img>
 
                     </div>
-                    <div className="px-24">
+                    <div className=" whitespace-pre ">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1 ">
-                            <Link to="/chickenbuckets">Chickenbuckets </Link>
+                            <Link to="/chickenbuckets">Chicken Buckets </Link>
                         </button>
                     </div>
 
@@ -53,9 +53,9 @@ function Main() {
                         ></img>
 
                     </div>
-                    <div className="px-24">
+                    <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1 ">
-                        <Link to="/briyanibuckets">Briyanibuckets </Link>
+                            <Link to="/briyanibuckets">Briyanibuckets </Link>
                         </button>
                     </div>
 
@@ -69,7 +69,7 @@ function Main() {
                         ></img>
 
                     </div>
-                    <div className="px-24">
+                    <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1 ">
                             Boxmeals
                         </button>
@@ -85,7 +85,7 @@ function Main() {
                         ></img>
 
                     </div>
-                    <div className="px-24">
+                    <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1  ">
                             Burger
                         </button>
@@ -101,7 +101,7 @@ function Main() {
                         ></img>
 
                     </div>
-                    <div className="px-24">
+                    <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1   ">
                             Snacks
                         </button>
