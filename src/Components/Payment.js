@@ -9,11 +9,11 @@ export function Payment() {
 
 
     // useEffect(() => {
-	// 	setID(localStorage.getItem('id'))
-	// 	setPrice(localStorage.getItem('price'));
-		
-		
-	// }, [])
+    // 	setID(localStorage.getItem('id'))
+    // 	setPrice(localStorage.getItem('price'));
+
+
+    // }, [])
 
     return (
         <div className="text-white ">
@@ -60,12 +60,13 @@ export function Payment() {
 
 
                     </div>
+                    <div className="flex justify-center  py-5 px text-white font-bold">
+                    <button className=" rounded-md px-8 py-4 my  bg-red-600 hover:bg-red-700  "><Link to="/paymentconfirmation">PAY  </Link><Outlet /> </button>
+                </div>
                 </form>
-                <div className="justify-center    sm:px-36   py-5 px text-white font-bold">
-                            <button    className= " rounded-md px-8 py-4 my  bg-red-600 hover:bg-red-700  "><Link to="/paymentconfirmation">PAY  </Link><Outlet /> </button>
-                        </div>
+               
             </div>
-            
+
         </div>
     )
 }
