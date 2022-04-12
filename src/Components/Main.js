@@ -11,7 +11,7 @@ function Main() {
     return (
         <div className="sm:p-10   md:pl-14 justify-center relative">
 
-            <div className=" text-red-600  grid grid-cols-2 gap-5  md:grid-cols-3 ">
+            <div className=" text-red-600  grid grid-cols-2 gap-5  md:grid-cols-3 p-5">
                 <div className=" border-1  rounded-md">
                     <div>
                         <img

@@ -96,18 +96,18 @@ function Footer() {
                             <Link to="/">CFC India</Link>
                         </li>
                         <li className="   ">
-                            <Link to="/">About cfc</Link>
+                            <Link to="/">About </Link>
                         </li>
 
                         <li className="    ">
-                            <Link to="/">Cfc Care</Link>
+                            <Link to="/">Care</Link>
                         </li>
                         <li className="   ">
                             <Link to="/">Careers</Link>
                         </li>
 
                         <li className="  ">
-                            <Link to="/">Our Golden Pass</Link>
+                            <Link to="/">Golden Pass</Link>
                         </li>
                     </ul>
                 </div>
