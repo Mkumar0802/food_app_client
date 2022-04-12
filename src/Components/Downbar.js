@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Downbar() {
 
     return (
-        <div className="  w-auto bg-slate-800 pl-32   place-items-center place-content-evenly text-white    md:hidden sm:hidden lg:block justify-start hidden">
+        <div className="  w-auto bg-slate-900 pl-32   place-items-center place-content-evenly text-white    md:hidden sm:hidden lg:block justify-start hidden">
             <div className="flex">
                 <ul className="flex  space-x-3">
                     <li>

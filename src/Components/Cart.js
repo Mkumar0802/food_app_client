@@ -62,7 +62,7 @@ function Cart() {
                             <button onClick={() => setCount(count + 1)} className={`  ${count >= 100 ? 'bg-red-600 opacity-50 cursor-not-allowed px-4 py-1 rounded-md ' : 'rounded-md px-4 py-1 my  bg-red-600 hover:bg-red-700'} `}>+</button>
                         </div>
                         <div className="justify-center py-5 px text-white font-bold">
-                            <button onClick={() => setData(id, price)} className={`  ${count === 0 ? '  bg-red-600 opacity-50 cursor-not-allowed px-12 py-8 rounded-md ' : 'rounded-md px-10 py-4 my  bg-red-600 hover:bg-red-700'} `}><Link to="/paymentconfirmation">Next </Link><Outlet /> </button>
+                            <button onClick={() => setData(id, price)} className={`  ${count === 0 ? '  bg-red-600 opacity-50 cursor-not-allowed px-10 py-4 rounded-md ' : 'rounded-md px-10 py-4 my  bg-red-600 hover:bg-red-700'} `}><Link to="/paymentconfirmation">Next </Link><Outlet /> </button>
                         </div>
                     </div>
                 </div>

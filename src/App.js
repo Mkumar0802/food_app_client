@@ -19,7 +19,7 @@ import { Payment } from "./Components/Payment";
 
 function App() {
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="bg-slate-800 min-h-screen">
       <BrowserRouter>
         <Navbar />
        
@@ -34,10 +34,19 @@ function App() {
           <Route path="chickenbuckets" element={<Chickenbuckets />} />
           <Route path="briyanibuckets" element={<Briyanibuckets />} />
           <Route path="paymentconfirmation" element={<Payment />} />
+
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p className="text-white text-2xl">Page under Construction!</p>
+              </main>
+            }
+          />
         </Routes>
         <SocialLinks />
         <Footer />
-        
+       
 
       </BrowserRouter>
     </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
     let [open,setOpen]=useState(false);
   return (
     <div className='shadow-md w-full relative top-0 left-0  '>
-      <div className='md:flex items-center justify-between bg-slate-800   py-4 md:px-10 px-7'>
+      <div className='md:flex items-center justify-between bg-slate-900   py-4 md:px-10 px-7'>
       <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       '>
         <span className='text-3xl mr-1 pt-2 text-white'>

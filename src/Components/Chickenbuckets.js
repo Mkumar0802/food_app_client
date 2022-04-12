@@ -34,7 +34,7 @@ const Chickenbuckets = ({ alignment = 'start' }) => {
     }
     return (
 
-        <div className="w-auto h-auto bg-red-500  ">
+        <div className="w-auto h-auto   ">
             <div>
                 <h2 className="px-16 pt-5  text-xl   md:text-2xl font-bold text-white  ">Matchday</h2>
             </div>
@@ -48,7 +48,7 @@ const Chickenbuckets = ({ alignment = 'start' }) => {
                                 alt="chicken"
                                 src={val.photo}
                             ></img>
-                            <div className="p-2">
+                            <div className="p-2 text-white">
                                 <p className="text-base md:text-xl  ">{val.name}</p>
                                 <p className="text-base md:text-lg   ">₹ {val.price}</p>
                                 <p className=" font-bold">
@@ -59,7 +59,7 @@ const Chickenbuckets = ({ alignment = 'start' }) => {
                                     <div className="justify-start hidden"> </div>
                                     <div className="justify-center hidden"> </div>
                                     <div className="flex justify-center   gap-3 "><Link to="/cart">
-                                        <button onClick={() => setData(val.id, val.name, val.photo, val.price, val.details)} className="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2" >
+                                        <button onClick={() => setData(val.id, val.name, val.photo, val.price, val.details)} className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2" >
                                             Add to cart
                                         </button></Link>
                                     </div>

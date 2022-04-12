@@ -11,7 +11,7 @@ function Main() {
     return (
         <div className="sm:p-10   md:pl-14 justify-center relative">
 
-            <div className=" text-red-600  grid grid-cols-2 gap-5  md:grid-cols-3 p-5">
+            <div className=" text-white  grid grid-cols-2 gap-5  md:grid-cols-3 pl-5">
                 <div className=" border-1  rounded-md">
                     <div>
                         <img
@@ -71,7 +71,7 @@ function Main() {
                     </div>
                     <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1 ">
-                            Boxmeals
+                        <Link to="boxmeals"> Boxmeals</Link>  
                         </button>
                     </div>
 
@@ -87,7 +87,7 @@ function Main() {
                     </div>
                     <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1  ">
-                            Burger
+                          <Link to="burger"> Burger</Link>  
                         </button>
                     </div>
 
@@ -103,7 +103,7 @@ function Main() {
                     </div>
                     <div className="">
                         <button className="sm:text-sm sm:px-1 sm:py-1 md:text-xl underline underline-offset-1   ">
-                            Snacks
+                        <Link to="snacks">Snacks</Link> 
                         </button>
                     </div>
 
