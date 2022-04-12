@@ -27,7 +27,7 @@ const Matchday = ({ alignment = 'start' }) => {
     const setData = (id, name, photo, price, details) => {
         localStorage.setItem('id', id)
         localStorage.setItem('name', name)
-        localStorage.setItem('image', photo)
+        localStorage.setItem('photo', photo)
         localStorage.setItem('price', price)
         localStorage.setItem('details', details)
 
