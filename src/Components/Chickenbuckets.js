@@ -36,7 +36,7 @@ const Chickenbuckets = ({ alignment = 'start' }) => {
 
         <div className="w-auto h-auto   ">
             <div>
-                <h2 className="px-16 pt-5  text-xl   md:text-2xl font-bold text-white  ">Matchday</h2>
+                <h2 className="px-16 pt-5  text-xl   md:text-2xl font-bold text-white animate-rubberBand ">Matchday</h2>
             </div>
 
             <div className=" pr-10  mx-10   sm:grid-flow-grid-cols-2   md:grid-cols-3 gap-5      lg:grid grid-cols-5 ">
