@@ -22,7 +22,7 @@ export function Payment() {
         <div className=" ">
 
             <div className="flex justify-center p-10  ">
-                <h1 className="text-xl font-semibold text-white ">Payment Details</h1>
+                <h1 className="text-xl font-semibold text-white  animate-rubberBand">Payment Details</h1>
               
             </div>
             <div className="md:flex md:justify-center p-5  grid grid-rows-2 justify-center ">

@@ -13,12 +13,12 @@ function Cart() {
     const [name, setName] = useState('');
     const [photo, setPhoto] = useState('');
     const [price, setPrice] = useState('');
-    const [id, setID] = useState(null);
+    // const [id, setID] = useState(null);
     // const[total,setTotal] =useState('');
 
 
     useEffect(() => {
-        setID(localStorage.getItem('id'))
+        // setID(localStorage.getItem('id'))
         setName(localStorage.getItem('name'));
         setPhoto(localStorage.getItem('photo'));
         setPrice(localStorage.getItem('price'));
@@ -40,7 +40,7 @@ function Cart() {
     return (
         <div>
             <div className="container mx-auto px-20  py-20 text-white">
-                <h1 className="sm:text-xl md:text-3xl ">Cart details</h1>
+                <h1 className="sm:text-xl md:text-3xl animate-rubberBand">Cart details</h1>
 
                 <div className="grid grid-cols-2 gap-5  md:grid-cols-3 p-2">
                     <img
