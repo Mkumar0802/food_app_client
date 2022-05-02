@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link} from "react-router-dom";
-
+import { URLDevelopment } from "../helpers/URL";
 
 
 
@@ -12,7 +12,7 @@ const Chickenbuckets = ({ alignment = 'start' }) => {
     const getData = async () => {
         try {
             let { data: response } = await axios.get(
-                `https://food-api-kmk.herokuapp.com/chickenbucket/getchickenbucket`
+                `${URLDevelopment}/chickenbucket/getchickenbucket`
             );
             setChickenbuckets(response);
         } catch (err) {

@@ -1,18 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+// import { useDispatch } from "react-redux";
+// import {cart} from '../features/cart'
+import { URLDevelopment } from "../helpers/URL";
 
 
 
 const Matchday = ({ alignment = 'start' }) => {
     const [matchday, setMatchday] = useState([]);
+    // const dispatch =useDispatch();
     console.log(matchday);
 
     const getData = async () => {
         try {
             let { data: response } = await axios.get(
-                `https://food-api-kmk.herokuapp.com/matchday/getmatchday`
+                `${URLDevelopment}/matchday/getmatchday`
             );
             setMatchday(response);
         } catch (err) {

@@ -1,18 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link} from "react-router-dom";
-
+// import { useDispatch } from "react-redux";
+// import {cart} from '../features/cart'
+import { URLDevelopment } from "../helpers/URL";
 
 
 
 const Briyanibuckets = ({ alignment = 'start' }) => {
     const [briyanibuckets, setBriyanibuckets] = useState([]);
+    // const dispatch =useDispatch();
     console.log(briyanibuckets);
 
     const getData = async () => {
         try {
             let { data: response } = await axios.get(
-                `https://food-api-kmk.herokuapp.com/briyanibucket/getbriyanibucket`
+                ` ${URLDevelopment}/briyanibucket/getbriyanibucket`
             );
             setBriyanibuckets(response);
         } catch (err) {
@@ -58,11 +61,24 @@ const Briyanibuckets = ({ alignment = 'start' }) => {
                                 <div className={`flex  justify-center lg:justify-${alignment}`}>
                                     <div className="justify-start hidden"> </div>
                                     <div className="justify-center hidden"> </div>
-                                    <div className="flex justify-center   gap-3 "><Link to="/cart">
+                                    <div className="flex justify-center   gap-3 ">
+
+                                    {/* <Link to="/cart">
+                                        <button onClick={() => dispatch(cart({name:val.name,price:val.price,photo:val.photo}))} className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2" >
+                                            Add to cart
+
+                                        </button></Link> */}
+
+                                    </div>
+
+
+                                     <div className="flex justify-center   gap-3 "><Link to="/cart">
                                         <button onClick={() => setData(val.id, val.name, val.photo, val.price, val.details)} className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2" >
                                             Add to cart
 
                                         </button></Link>
+
+                                        
                                     </div>
                                 </div>
 

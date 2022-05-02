@@ -41,13 +41,16 @@ const Navbar = () => {
             <Link to="/">CONTACT</Link>
           </li>
           <li className="sm:hidden  md:block  rounded-lg px-4 py-2  bg-red-600 hover:bg-red-700 ">
+            <Link to="/login">Login</Link>
+          </li>
+          <li className="sm:hidden  md:block  rounded-lg px-4 py-2  bg-red-600 hover:bg-red-700 ">
             <Link to="/">DOWNLOAD APP</Link>
           </li>
           <li className=" rounded-lg px-4 py-2  bg-red-600 hover:bg-red-700  ">
             <Link to="/">ORDER ONLINE NOW</Link>
 
           </li>
-
+          
 
         </ul>
 

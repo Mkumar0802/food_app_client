@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { Link, Outlet } from "react-router-dom";
-
+// import { useSelector } from 'react-redux';
 
 export function Payment() {
+
+    // const user = useSelector(state => state.user.value)
     // const [count, setCount] = useState(0);
     // const [price, setPrice] = useState('');
     // const [id, setID] = useState(null);
@@ -20,6 +23,7 @@ export function Payment() {
 
             <div className="flex justify-center p-10  ">
                 <h1 className="text-xl font-semibold text-white ">Payment Details</h1>
+              
             </div>
             <div className="md:flex md:justify-center p-5  grid grid-rows-2 justify-center ">
                 <form class="w-full max-w-lg">
@@ -70,3 +74,5 @@ export function Payment() {
         </div>
     )
 }
+
+export default Payment;

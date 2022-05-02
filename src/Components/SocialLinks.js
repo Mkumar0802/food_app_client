@@ -12,14 +12,14 @@ function SocialLinks({ alignment = 'start' }) {
 
 
 
-                <button className="mr-3 text-3xl md:text-5xl text-slate-400 hover:text-white ">  <ion-icon name="logo-facebook"></ion-icon> </button>
+                <button className="mr-3 text-3xl md:text-5xl text-blue-600 ">  <ion-icon name="logo-facebook"></ion-icon> </button>
 
-                <button className="mr-3 text-3xl md:text-5xl text-slate-400 hover:text-white"><ion-icon name="logo-twitter"></ion-icon> </button>
+                <button className="mr-3 text-3xl md:text-5xl text-sky-500"><ion-icon name="logo-twitter"></ion-icon> </button>
 
-                <button className="mr-3 text-3xl md:text-5xl text-slate-400 hover:text-white"><ion-icon name="logo-youtube"></ion-icon> </button>
-                <button className="mr-3 text-3xl md:text-5xl text-slate-400 hover:text-white"><ion-icon name="logo-pinterest"></ion-icon> </button>
-                <button className="mr-3 text-3xl md:text-5xl text-slate-400 hover:text-white"><ion-icon name="logo-linkedin"></ion-icon> </button>
-                <button className="mr-3 text-3xl md:text-5xl text-slate-400 hover:text-white"><ion-icon name="logo-instagram"></ion-icon></button>
+                <button className="mr-3 text-3xl md:text-5xl text-red-600"><ion-icon name="logo-youtube"></ion-icon> </button>
+                <button className="mr-3 text-3xl md:text-5xl text-red-400 "><ion-icon name="logo-pinterest"></ion-icon> </button>
+                <button className="mr-3 text-3xl md:text-5xl text-blue-600 "><ion-icon name="logo-linkedin"></ion-icon> </button>
+                <button className="mr-3 text-3xl md:text-5xl text-pink-500 "><ion-icon name="logo-instagram"></ion-icon></button>
 
 
             </div>

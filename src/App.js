@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css' // tailwind
 
-// import Register from "./pages/Register";
-import Login from "./Components/Login";
+
+// import Login from "./Components/Login";
 // import HomePage from './pages/HomePage'
 // import PageNotFound from './components/PageNotFound'
 import Home from "./Components/Home";
@@ -15,7 +15,8 @@ import Matchday from "./Components/Matchday";
 import Cart from "./Components/Cart";
 import Chickenbuckets from "./Components/Chickenbuckets";
 import Briyanibuckets from "./Components/Briyanibucket";
-import { Payment } from "./Components/Payment";
+import Payment from "./Components/Payment";
+import Cartbag from "./Components/Cartbag";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
 
         <Routes>
           <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
+          {/* <Route path="login" element={< Login/>} /> */}
           <Route path="home" element={<Home />} />
           {/* <Route path="register" element={<Register />} /> */}
           <Route path="matchday" element={<Matchday />} />
@@ -34,7 +35,7 @@ function App() {
           <Route path="chickenbuckets" element={<Chickenbuckets />} />
           <Route path="briyanibuckets" element={<Briyanibuckets />} />
           <Route path="paymentconfirmation" element={<Payment />} />
-
+          <Route path="cartbag" element={<Cartbag />} />
           <Route
             path="*"
             element={

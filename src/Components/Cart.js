@@ -1,11 +1,13 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import { Link, Outlet } from "react-router-dom";
-
+// import { cart } from '../features/cart'
+import { useDispatch } from "react-redux";
+import {cart} from '../features/cart'
 
 
 function Cart() {
-
+    const dispatch = useDispatch();
     const [count, setCount] = useState(0);
 
     const [name, setName] = useState('');
@@ -25,15 +27,15 @@ function Cart() {
 
     }, [])
 
-    const setData = (id, price, photo, name) => {
-        localStorage.setItem('id', id)
-        localStorage.setItem('name', name)
-        localStorage.setItem('photo', photo)
-        localStorage.setItem('price', price)
-        // localStorage.setItem('total',total)
-        // localStorage.setItem('details', details)
+    // const setData = (id, price, photo, name) => {
+    //     localStorage.setItem('id', id)
+    // //     localStorage.setItem('name', name)
+    // //     localStorage.setItem('photo', photo)
+    // //     localStorage.setItem('price', price)
+    //     // localStorage.setItem('total',total)
+    //     // localStorage.setItem('details', details)
 
-    }
+    // }
 
     return (
         <div>
@@ -62,7 +64,7 @@ function Cart() {
                             <button onClick={() => setCount(count + 1)} className={`  ${count >= 100 ? 'bg-red-600 opacity-50 cursor-not-allowed px-4 py-1 rounded-md ' : 'rounded-md px-4 py-1 my  bg-red-600 hover:bg-red-700'} `}>+</button>
                         </div>
                         <div className="justify-center py-5 px text-white font-bold">
-                            <button onClick={() => setData(id, price)} className={`  ${count === 0 ? '  bg-red-600 opacity-50 cursor-not-allowed px-10 py-4 rounded-md ' : 'rounded-md px-10 py-4 my  bg-red-600 hover:bg-red-700'} `}><Link to="/paymentconfirmation">Next </Link><Outlet /> </button>
+                            <button onClick={() => dispatch(cart({name:name,price:price,count:price}))} className={`  ${count === 0 ? '  bg-red-600 opacity-50 cursor-not-allowed px-10 py-4 rounded-md ' : 'rounded-md px-10 py-4 my  bg-red-600 hover:bg-red-700'} `}><Link to="/paymentconfirmation">Next </Link><Outlet /> </button>
                         </div>
                     </div>
                 </div>
