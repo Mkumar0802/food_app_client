@@ -1,14 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import './index.css' // tailwind
 
 
-// import Login from "./Components/Login";
+import Login from "./Components/Login";
 // import HomePage from './pages/HomePage'
 // import PageNotFound from './components/PageNotFound'
 import Home from "./Components/Home";
-import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
 // import Downbar from "./Components/Downbar";
-// import Register from "./Components/Register";
+
 import Footer from "./Components/Footer";
 import SocialLinks from "./Components/SocialLinks";
 import Matchday from "./Components/Matchday";
@@ -17,19 +17,20 @@ import Chickenbuckets from "./Components/Chickenbuckets";
 import Briyanibuckets from "./Components/Briyanibucket";
 import Payment from "./Components/Payment";
 import Cartbag from "./Components/Cartbag";
+import Registerpage from "./Components/Registerpage";
 
 function App() {
   return (
     <div className="bg-slate-800 min-h-screen">
-      <BrowserRouter>
-        <Navbar />
+     
+        <Header />
        
 
         <Routes>
-          <Route index element={<Home />} />
-          {/* <Route path="login" element={< Login/>} /> */}
+          <Route index element={<Login />} />
+          <Route path="login" element={< Login/>} />
           <Route path="home" element={<Home />} />
-          {/* <Route path="register" element={<Register />} /> */}
+          <Route path="register" element={<Registerpage />} />
           <Route path="matchday" element={<Matchday />} />
           <Route path="cart" element={<Cart />} />
           <Route path="chickenbuckets" element={<Chickenbuckets />} />
@@ -49,7 +50,7 @@ function App() {
         <Footer />
        
 
-      </BrowserRouter>
+      
     </div>
   );
 }

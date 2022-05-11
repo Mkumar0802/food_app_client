@@ -1,10 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, Outlet } from "react-router-dom";
 import Downbar from './Downbar';
+import {
+  
+  Nav,
+ 
+  NavDropdown,
+} from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { } from "react-router-dom";
+import { logout } from ".././features/userAction";
 
+const Header = () => {
+  const dispatch = useDispatch();
 
-const Navbar = () => {
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
+  const logoutHandler = () => {
+    dispatch(logout());
+  };
+
+  useEffect(() => { }, [userInfo]);
   let [open, setOpen] = useState(false);
   return (
     <div className='shadow-md w-full relative top-0 left-0  '>
@@ -40,9 +57,7 @@ const Navbar = () => {
           <li className=" rounded-lg px-4 py-2   ">
             <Link to="/">CONTACT</Link>
           </li>
-          <li className="sm:hidden  md:block  rounded-lg px-4 py-2  bg-red-600 hover:bg-red-700 ">
-            <Link to="/login">Login</Link>
-          </li>
+         
           <li className="sm:hidden  md:block  rounded-lg px-4 py-2  bg-red-600 hover:bg-red-700 ">
             <Link to="/">DOWNLOAD APP</Link>
           </li>
@@ -50,10 +65,38 @@ const Navbar = () => {
             <Link to="/">ORDER ONLINE NOW</Link>
 
           </li>
-          
+          <Nav>
+          {userInfo ? (
+            <>
+
+              <NavDropdown
+                title={`${userInfo.name}`}
+                id="collasible-nav-dropdown"
+              >
+                <NavDropdown.Item href="/profile">
+                  {/* <img
+                      alt=""
+                      src={`${userInfo.pic}`}
+                      width="25"
+                      height="25"
+                      style={{ marginRight: 10 }}
+                    /> */}
+                  My Profile
+                </NavDropdown.Item>
+
+                <NavDropdown.Divider />
+                <NavDropdown.Item onClick={logoutHandler}>
+                  Logout
+                </NavDropdown.Item>
+              </NavDropdown>
+            </>
+          ) : (
+            <div className="  sm:hidden  md:block  rounded-lg  bg-red-600 hover:bg-red-700 ">   <Nav.Link href="/login">Login</Nav.Link></div>
+          )}
+        </Nav>
 
         </ul>
-
+       
         <Outlet />
       </div>
       <Downbar />
@@ -62,4 +105,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Header;
