@@ -1,1 +1,1 @@
-export const  URLDevelopment = 'http://localhost:5000'
+export const  URLDevelopment = 'https://food-api-kmk.herokuapp.com'
