@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../utilltes/Loading";
@@ -20,6 +20,7 @@ function Login() {
 
   useEffect(() => {
     if (userInfo) {
+      toast.success(`welcome ${userInfo.name}`);
       navigate('/home')
     }
   }, [navigate, userInfo]);
@@ -27,6 +28,9 @@ function Login() {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
+
+
+
   };
 
   return (

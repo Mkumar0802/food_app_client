@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Loading from "../utilltes/Loading";
 import ValidationError from "./ValidationError";
 import { register } from "../features/userAction";
-
+import { toast } from 'react-toastify';
 
 
 
@@ -12,50 +12,21 @@ function Registerpage() {
     const navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
-    // const [pic, setPic] = useState(
-    //     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
-    // );
+    
     const [password, setPassword] = useState("");
     const [confirmpassword, setConfirmPassword] = useState("");
     const [message, setMessage] = useState(null);
-    // const [picMessage, setPicMessage] = useState(null);
+  
 
     const dispatch = useDispatch();
 
     const userRegister = useSelector((state) => state.userRegister);
     const { loading, error, userInfo } = userRegister;
 
-    // const postDetails = (pics) => {
-    //     if (
-    //         pics ===
-    //         "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
-    //     ) {
-    //         return setPicMessage("Please Select an Image");
-    //     }
-    //     setPicMessage(null);
-    //     if (pics.type === "image/jpeg" || pics.type === "image/png") {
-    //         const data = new FormData();
-    //         data.append("file", pics);
-    //         data.append("upload_preset", "notezipper");
-    //         data.append("cloud_name", "piyushproj");
-    //         fetch("https://api.cloudinary.com/v1_1/piyushproj/image/upload", {
-    //             method: "post",
-    //             body: data,
-    //         })
-    //             .then((res) => res.json())
-    //             .then((data) => {
-    //                 setPic(data.url.toString());
-    //             })
-    //             .catch((err) => {
-    //                 console.log(err);
-    //             });
-    //     } else {
-    //         return setPicMessage("Please Select an Image");
-    //     }
-    // };
-
+    
     useEffect(() => {
         if (userInfo) {
+            toast.success(`welcome ${userInfo.name}`);
             navigate('/home')
         }
     }, [navigate, userInfo]);
@@ -64,6 +35,7 @@ function Registerpage() {
         e.preventDefault();
 
         if (password !== confirmpassword) {
+            toast.warning("Passwords do not match")
             setMessage("Passwords do not match");
         } else dispatch(register(name, email, password,));
     };

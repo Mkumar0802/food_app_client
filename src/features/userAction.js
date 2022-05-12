@@ -27,7 +27,7 @@ export const login = (email, password) => async (dispatch) => {
 
     const { data } = await axios.post(
       `${URLDevelopment}/users/login`,
-      { email, password },
+      {email, password },
       config
     );
 
@@ -97,7 +97,7 @@ export const updateProfile = (user) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.post("/api/users/profile", user, config);
+    const { data } = await axios.post(`${URLDevelopment}/users/profile`, user, config);
 
     dispatch({ type: USER_UPDATE_SUCCESS, payload: data });
 
