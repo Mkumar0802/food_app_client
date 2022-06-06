@@ -2,7 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import './index.css' // tailwind
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { loadProgressBar } from 'axios-progress-bar'
+import 'axios-progress-bar/dist/nprogress.css'
 
 import Login from "./Components/Login";
 // import HomePage from './pages/HomePage'
@@ -22,6 +23,8 @@ import Cartbag from "./Components/Cartbag";
 import Registerpage from "./Components/Registerpage";
 import Dashboard from "./Components/Dashboard"
 toast.configure()
+loadProgressBar()
+
 
 function App() {
   return (
